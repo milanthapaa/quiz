@@ -44,6 +44,16 @@ def quiz():
         user_answers = list(ask_user)[0]
         if user_answers.lower() == answers[index].lower():
             points += 1
+    print()
+    print("==================================================================")
+    if points >= 8:
+        print(f"Congratulations you are on top 20% and you scored {points}")
+    elif points < 4:
+        print(f"You need to work hard on your knowledge. You scored {points}")
+    else:
+        print(f"You have a decent knowledge. You scored {points}")
+    print("==================================================================")
+    print()
 
 
 if __name__ == "__main__":
