@@ -1,4 +1,5 @@
 import time
+from pytimedinput import timedInput
 
 
 def quiz():
@@ -37,6 +38,7 @@ def quiz():
         "cow"
 
     ]
+
 
 if __name__ == "__main__":
     quiz()
