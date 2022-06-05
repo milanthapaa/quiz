@@ -39,6 +39,12 @@ def quiz():
 
     ]
 
+    for index, question in enumerate(questions):
+        ask_user = timedInput(question, timeout=10)
+        user_answers = list(ask_user)[0]
+        if user_answers.lower() == answers[index].lower():
+            points += 1
+
 
 if __name__ == "__main__":
     quiz()
